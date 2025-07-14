@@ -1,3 +1,5 @@
+import math
+
 # Operatore di assegnazione = e tipi di dato primitivi
 miaVarNum = 12; #Integer
 miaVarString = "Ciao"
@@ -78,3 +80,33 @@ invito2 = False
 partecipazione2 = (eta2 >= 18) or (invito2)
 print ("Posso partecipare alla festa ?", partecipazione2)
 
+
+# Stampa dei tipi di dato funzione built-in type()
+varIntero = 10
+varFloat = 9.3
+varString = "ciao"
+varBool = True
+
+print("la varIntero è di tipo", type(varIntero))
+print("la varFloat è di tipo", type(varFloat))
+print("la varString è di tipo", type(varString))
+print("la varBool è di tipo", type(varBool))
+
+# Funzioni matematiche integrate (Built-in)
+print(abs(-5)) #5
+print(round(2.9)) #3
+print(pow(2, 3)) #8
+print(divmod(7,2)) # (3, 1) --> (risultato intero, resto)
+print(min(1 , 2 , 3, 0)) # 0
+print(max(1 , 2 , 3, 0)) # 3
+
+# per poter utilizzare delle funzioni più avanzate devo importare (in alto nello script ) il modulo da utilizzare. In questo caso il modulo è math
+
+print(math.sqrt(9))
+print(math.sin(math.pi/2))
+print(math.ceil(8.000001)) #math.ceil arrotonda all'intero superiore
+print(math.floor(8.000001)) #math.floor arrotonda all'intero inferiore
+
+print(round(6.51)) #arrotonda in modo classico
+
+print(math.factorial(5))  #120
